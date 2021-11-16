@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> page title</title>
+
+<style>
+body{background-color:smarald;}
+h1{color:blue;}
+h2{color:rgb(123,23,34)}
+p{color:#3cb271;}
+table{background-color:blue;}
+ul{background-color:green;}
+
+table,tr, td, ul{border: 2px solid black}
+tr:hover {background-color: #f5f5f5}
+h1{font-family: "tymes new roman";
+   font-style: italic
+   font-size: 36px;}
+ p{font-family: "Arial";
+  font-size: 18px;}
+ img{border: 3px solid black;
+     border-radius: 15px;
+	 width:250px;
+	 display:block;
+	 padding:2px;
+	 margin:left;
+	 opacity:0.5;
+	 }
+</style>
+
+<script>
+function veziViitor()
+{
+document.getElementById("numeProfil").innerHTML="CEO Milionar.DAN VASILE DANIEL-patron";
+
+var tabelEducatie = document.getElementById("tabelEducatie");
+ tabelEducatie.rows[0].cells[0].innerHTML= "Univ Tehnica- OSUT";
+ tabelEducatie.rows[0].cells[1].innerHTML = " Sef Consiliul principal";
+tabelEducatie.rows[1].cells[0].innerHTML ="Colegiul Tehnic";
+ tabelEducatie.rows[1].cells[2].innerHTML = "Vorbitul in public";
+ 
+  document.getElementById("pozaProfil").src = "poza 2 profin.jpg";
+  
+    document.body.style.backgroundColor = "red";
+
+	
+	var par = document.getElementsByTagName("p");
+	var i;
+	  for (i=0; i< par.length; i++) {
+	       par[i].style.color = "magenta";
+    }
+
+      document.getElementById("pozaProfil").style.opacity="0.9";
+	  document.getElementById("pozaProfil").style.border="6px";
+}       
+    
+	     function arVarst()
+		 
+		 {
+		 var azi = new Date;
+		 var varstMea;
+		   var anNasc = document.getElementById("varsta").innerHTML;
+		   
+		    varstMea = azi.getFullYear() - parseInt(anNasc);
+			 document.getElementById("varsta").innerHTML = varstMea; 
+		}
+
+ 
+</script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<h1 id="numeProfil"> DAN VASILE DANIEL </h1>
+<img id="pozaProfil" src="https://scontent-otp1-1.xx.fbcdn.net/v/t1.6435-9/78059179_1528648293965490_5480966796179668992_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=slTT4iv6sEMAX9zTxgR&tn=QuH8Z1_GAYY1_uMA&_nc_ht=scontent-otp1-1.xx&oh=76a80c9c0ebd211720a23eba08c1f95f&oe=61A821E9" width="250" height="250">
+<button onclick="veziViitor()">Alta viata</button>
+<p> dandaniel620t@gmail.com
+<p> 0754876730
+<p onmouseover="arVarst()" id="varsta">2001</p>
+
+<p> "Imi doresc de la facultate ca ca in timpul facultatii sa ne gaseasca joburi in domeniu ca sa putem profesa din timp"
+</p>
+<h2> Educatie </h2>
+<table id="tabelEducatie"> 
+<tr>
+<td> Universitatea Tehnica </td>
+<td> CJ 2021-2025 </td>
+<td> Inginer </td>
+</tr>
+<tr>
+<td> Colegiul Tehnic Al.Papiu Ilarian </td>
+<td> 2015-2019 </td>
+<td> Bacalaureat </td>
+</tr>
+</body>
+</table>
+<h2> Pasiuni </h2>
+<ul class="w3-table">
+<li>
+spotul
+</li>
+<li> Muzica</li>
+</ul>
+<br>
+<a href="Catalog Studenti.html"> inapoi la catalog</a>
+</body>
+</html>
